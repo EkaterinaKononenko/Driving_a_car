@@ -38,12 +38,12 @@ class Road {
       const x = lerp(this.left, this.right, i / this.laneCount);
 
       ctx.setLineDash([20, 20]);
-
       ctx.beginPath();
       ctx.moveTo(x, this.top);
       ctx.lineTo(x, this.bottom);
       ctx.stroke();
     }
+
     ctx.setLineDash([]);
     this.borders.forEach((border) => {
       ctx.beginPath();
